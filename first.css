@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    
+}
+body{
+    background: linear-gradient(#111,#222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body::after{
+    content: '';
+    width: 100%;
+    height:100%;
+    background: red;
+    position: absolute;
+    clip-path: circle(37% at right 70%);
+    z-index: -1;
+}
+.container{
+    width: 80%;
+    height:80%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    
+
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+    font-weight: 500;
+    
+}
+nav a{
+    color: white;
+    font-size: 20px;
+    
+}
+nav a:hover{
+    color: red;
+    
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.text{
+    color: white;
+    width: 40%;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+p{
+    word-spacing: 3px;
+    font-size: 17px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    line-height: 20px;
+    
+}
+.pic{
+    width: 40%;
+    
+}
+img{
+    width: 400px;
+}
+@media (min-width:950px) and (max-width:1150px){
+    img{
+        width: 330px;
+    }
+    p{
+        word-spacing: 3px;
+        font-size: 14px;
+        margin: 10px 0;
+        letter-spacing: 1px;
+        line-height: 20px;
+        
+    }
+   
+
+}
+@media (min-width:375px) and (max-width:812px){
+    .content{
+        flex-direction: column;
+        justify-content:center ;
+
+    }
+    .pic{
+        width: 80%;
+        
+    }
+    .text{
+        color: white;
+        width: 100%;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    img{
+        width: 200px;
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    body::after{
+        content: '';
+        
+        clip-path: circle(40% at bottom );
+
+    }
+
+}
